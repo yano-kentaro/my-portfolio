@@ -1,10 +1,13 @@
 <template>
-
+  <p>{{message}}</p>
 </template>
 
 <script>
 export default {
-  components: {
+  data: function() {
+    return {
+      message: "index"
+    }
   }
 }
 </script>
