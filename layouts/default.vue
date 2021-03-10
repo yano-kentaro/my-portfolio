@@ -3,6 +3,7 @@
     <v-main id="bg-img">
       <v-app-bar color="success" app>
         <v-app-bar-nav-icon @click="toggleNaviFlag" />
+        <v-app-bar-title class="font">My Portfolio</v-app-bar-title>
       </v-app-bar>
 
       <v-navigation-drawer
@@ -30,9 +31,9 @@
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
-      <v-container>
-        <nuxt />
-      </v-container>
+
+      <nuxt />
+
     </v-main>
   </v-app>
 </template>
@@ -43,7 +44,7 @@ export default {
     return {
       navigationFlag: false,
       items: [{ text: "自己紹介" },
-              { text: "オリジナルアプリ" },
+              { text: "これまでの経歴" },
               { text: "Qiita投稿記事" },
               ],
       subHeaderText: "CONTENTS",
@@ -61,10 +62,6 @@ export default {
 #bg-img {
   background-image: url(/congruent_pentagon.png);
   background-repeat: repeat;
-}
-
-.container{
-  height: 80vh;
 }
 
 .font {
